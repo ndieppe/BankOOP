@@ -9,7 +9,7 @@ class bank:
     
     def intrestcalc(self):
         intrest = random.uniform(1,3.25)
-        newbal = self.balance * (1 + (intrest/100)) ** 12
+        newbal = self.balance * (1 + (intrest/100)) ** 12 #I'm aware this clearly isn't how intrest works, But i wanted to utilise Random
         return f"Your balance in a year will aproximately be £{newbal:.2f}"
     
     def withdraw(self):
@@ -21,7 +21,7 @@ class bank:
                 print("Your failed to enter a valid amount, please try again: ")
         self.balance = self.balance - WithdrawVal
         time = datetime.datetime.now()
-        timedisplay = time.strftime("%x") + " " + time.strftime("%X")
+        timedisplay = time.strftime("%x") + " " + time.strftime("%X") #This is to display the time in a more readable format
         self.transactions.update({f"-£{WithdrawVal:.2f}": timedisplay})
         return f"You successfully withdrew £{WithdrawVal}, your new balance is £{self.balance:.2f}"
 
