@@ -1,5 +1,5 @@
 
-<h1 align="center" style="font-weight: bold;">Simple Bank OOP program</h1>
+<h1 align="center" style="font-weight: bold;">🏦Simple Bank OOP program🏦</h1>
 
 
 <p align="center">A simple Bank program utilising Object Oriented Programming</p>
